@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+:root {
+    --top-offset: 10px;
+    --note-offset: calc(var(--top-offset) + 1px);
+    --gui-offset: calc(var(--top-offset) + 50px);
+}
+canvas {
+    display: block;
+    margin: auto;
+}
+#gui {
+    position: absolute;
+    top: var(--gui-offset);
+    left: 10px;
+    padding: 5px;
+}
+h5 {
+    color: white;
+    position: absolute;
+    top: var(--note-offset);
+    left: 10px;
+    padding: 5px;
+}
+#nav {
+    color: white;
+    position: absolute;
+    top: var(--top-offset);
+    left: 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+a:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+}
